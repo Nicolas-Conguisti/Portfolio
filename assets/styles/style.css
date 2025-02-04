@@ -46,10 +46,12 @@ main{
 .global_nav_liens{
     text-decoration: none;
     font-size: 120%;
-    transition: color 0.2s ease;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
 }
-.global_nav_liens:hover{
+
+.global_nav_liens:hover {
     color: rgb(233, 163, 102);
+    text-decoration: underline;
 }
 
 #index_main_container_photoPresentation{
