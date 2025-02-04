@@ -29,9 +29,7 @@ main{
     margin: 0 auto;
 }
 
-.index_header_container_titres{
-    width: 50%;
-}
+
 
 .global_sousTitre{
     padding-left: 40px;
@@ -59,6 +57,20 @@ main{
     text-decoration: underline;
 }
 
+.global_main_container_content{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+}
+
+.global_main_content{
+    font-size: 130%;
+}
+
+
+
 #index_main_container_photoPresentation{
     width: 40%;
     float: right;
@@ -71,14 +83,17 @@ main{
     border-radius: 50px;
 }
 
-.global_main_container_content{
+
+#cv_main_container_intregrateurCV{
     width: 65%;
+    float: right;
+    padding-left: 5%;
+}
+
+#cv_main_container_content{
+    width: 35%;
     display: flex;
     align-items: center;
     text-align: center;
     padding: 5%;
-}
-
-.global_main_content{
-    font-size: 130%;
 }
