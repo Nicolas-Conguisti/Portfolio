@@ -11,25 +11,35 @@ header{
     width: 100%;
     height: 15%;
     justify-content: space-between;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 nav{
     width: 30%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
     gap: 5px;
 }
 
 main{
+    display: flex;
     width: 85%;
     height: 85%;
+    margin: 0 auto;
+}
+
+.index_header_container_titres{
+    width: 50%;
+}
+
+.global_sousTitre{
+    padding-left: 40px;
 }
 
 .global_texte{
     color:rgb(235, 200, 169);
     font-family: 'Alkatra', cursive;
+    margin: 0;
 }
 
 .global_nav_liens{
@@ -42,12 +52,25 @@ main{
 }
 
 #index_main_container_photoPresentation{
-    width: 30%;
+    width: 40%;
     float: right;
+    padding-left: 5%;
 }
 
 #index_main_photoPresentation{
     max-width: 100%;
     max-height: 100%;
     border-radius: 50px;
+}
+
+#index_main_container_introTextuelle{
+    max-width: 65%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+}
+
+#index_main_introTextuelle{
+    font-size: 130%;
 }
