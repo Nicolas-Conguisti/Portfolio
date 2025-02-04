@@ -106,7 +106,8 @@ main{
     margin: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 250px;
+    width: 30%;
+    height: 30%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
