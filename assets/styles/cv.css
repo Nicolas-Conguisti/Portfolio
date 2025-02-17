@@ -1,0 +1,13 @@
+#cv_main_container_intregrateurCV{
+    width: 65%;
+    float: right;
+    padding-left: 5%;
+}
+
+#cv_main_container_content{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+}
