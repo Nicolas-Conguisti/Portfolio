@@ -3,7 +3,6 @@
 
 body{
     margin : 3% 5%;
-    padding: auto;
     background-image:linear-gradient(to right, rgb(29, 13, 94), rgb(54, 16, 207));
 }
 
@@ -67,11 +66,18 @@ main{
     color: rgb(233, 163, 102);
 }
 
+.global_main_texteCentre{
+    text-align: center;
+}
+
+.global_main_texteGauche{
+    text-align: left;
+}
+
 .global_main_container_content{
     width: 65%;
     align-items: center;
-    text-align: center;
-    padding: 5%;
+    padding: 5% 5% 5% 0;
     margin : auto;
 }
 
@@ -83,4 +89,8 @@ main{
     width: 65%;
     float: right;
     padding-left: 5%;
+}
+
+.global_main_liste{
+    list-style: none;
 }
