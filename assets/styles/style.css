@@ -38,7 +38,7 @@ main{
 .global_texte{
     color:rgb(235, 200, 169);
     font-family: 'Alkatra', cursive;
-    margin: 0;
+    margin: 10px;
 }
 
 .global_liens{
@@ -59,10 +59,10 @@ main{
 
 .global_main_container_content{
     width: 65%;
-    display: flex;
     align-items: center;
     text-align: center;
     padding: 5%;
+    margin : auto;
 }
 
 .global_main_content{
