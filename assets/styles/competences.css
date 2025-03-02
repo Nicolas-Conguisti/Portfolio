@@ -25,14 +25,17 @@
     height: 20%;
 }
 
-.competences_carte_listeExperiences li {
+.competences_carte_listeExperiences {
+    list-style: none;
     font-size: 1.1em;
+    padding-left: 0;
+    text-align: left;
 }
 
 .competences_carte_listeExperiences a {
-    color: rgb(233, 163, 102);
     padding-bottom: 5px;
     display: block;
+    padding-left: 0;
 }
 
 .competences_carte_listeTechnologies img {
