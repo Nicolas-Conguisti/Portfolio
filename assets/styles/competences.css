@@ -5,9 +5,14 @@
     margin: 20px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 50%;
-    height: 30%;
+    width: 60%;
+    height: 40%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.competences_row{
+    display: flex;
+    justify-content: center;
 }
 
 .competences_main_carteCompetence:hover {
@@ -42,4 +47,12 @@
     height: 50px;
     margin: 5px;
     margin-top: 20px;
+}
+
+.competences_carte_photo img {
+    width: 50%;
+    height: 50%;
+    margin: 5px;
+    margin-top: 20px;
+    border-radius: 50px;
 }
