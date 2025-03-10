@@ -4,6 +4,7 @@
 body{
     margin : 3% 5%;
     background-image:linear-gradient(to right, rgb(29, 13, 94), rgb(54, 16, 207));
+    overflow-x: hidden;
 }
 
 header{
@@ -94,4 +95,66 @@ main{
 
 .global_main_liste{
     list-style: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    main {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 5px 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    nav {
+        width: fit-content;
+        margin: 5px auto 0 auto;
+        flex-wrap: wrap;
+        gap: 1px;
+        padding: 2px 0;
+        border: 1px solid rgb(235, 200, 169);
+        border-radius: 5px;
+    }
+
+    .global_liens_nav {
+        font-size: 95%;
+        padding: 1px 3px;
+    }
+
+    main {
+        flex-direction: column;
+        width: 95%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .global_main_container_content {
+        width: 90%;
+        padding: 3%;
+    }
 }
