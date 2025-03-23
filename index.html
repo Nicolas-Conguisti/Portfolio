@@ -1,40 +1,228 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicolas Conguisti - Portfolio</title>
-    <link rel="stylesheet" href="./assets/styles/style.css">
-    <link rel="stylesheet" href="./assets/styles/index.css">
-    <link rel="icon" type="image/x-icon" href="./assets/images/icones/icone_livre.png">
-</head>
-<body>
-    <header>
-        <div>
-            <h1 class="global_texte">Nicolas Conguisti</h1>
-            <h2 class="global_texte global_sousTitre">Portfolio - Étudiant en informatique</h2>
-        </div>
-        <nav>
-            <a href="#" class="global_texte global_liens_nav global_lienActuel"> Home </a>
-            <a href="./src/competences.html" class="global_texte global_liens_nav"> Compétences </a>
-            <a href="./src/experiences.html" class="global_texte global_liens_nav"> Expériences </a>
-            <a href="./src/cv.html" class="global_texte global_liens_nav"> CV </a>
-            <a href="./src/contact.html" class="global_texte global_liens_nav"> Contact </a>
-        </nav>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicolas Conguisti - mon portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/icones/icone_livre.png">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo">Portfolio - Étudiant en informatique</div>
+        <ul class="nav-links">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#experience">Expériences</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <main>
-        <article class="global_main_container_content global_main_texteCentre">
-            <p class="global_texte global_main_content">
-                Étudiant organisé, sérieux, combatif et doté d'un fort esprit d'équipe.
-                Je suis rigoureux dans mon travail et je redouble d'efforts pour atteindre mes objectifs ! </br> </br>
-            </p>
-            <div class="global_texte global_main_content">
-                <a href="https://github.com/Nicolas-Conguisti" class="global_texte global_liens" target="_blank"> Découvrez mon espace GitHub !</a>
+      <section id="about" class="section">
+        <div class="container">
+          <div class="about-content">
+            <div class="profile-image">
+              <img src="./assets/photos/photo_mer.jpg" alt="Photo de profil" />
             </div>
-        </article>
-        <article id="index_main_container_photoPresentation">
-            <img id="index_main_photoPresentation" src="./assets/images/photo/photo_mer.jpg" alt="Photo de présentation">
-        </article>
+            <div class="about-text">
+              <h1>Nicolas Conguisti</h1>
+              <h2>Développeur Full-Stack</h2>
+              <p>
+                Étudiant organisé, sérieux, combatif et doté d'un fort esprit d'équipe. </br>
+                Je suis rigoureux dans mon travail et je redouble d'efforts pour atteindre mes objectifs ! </br>
+                Actuellement alternant dans l'entreprise CGI, je veux accumuler de l'expérience pour, à terme,</br>
+                devenir chef de projet informatique.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <h2>Compétences</h2>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3>Développement d'application</h3>
+              <div class="skill-items">
+                <div class="skill-item" data-level="90">
+                  <i class="fab fa-html5" title="HTML"></i>
+                  <i class="fab fa-css3-alt" title="CSS"></i>
+                  <i class="fab fa-js" title="Javascript"></i>
+                  <span>HTML / CSS / JavaScript</span>
+                </div>
+                <div class="skill-item" data-level="75">
+                  <i class="fab fa-java" title="Java"></i>
+                  <span>Java</span>
+                </div>
+                <div class="skill-item" data-level="80">
+                  <i class="fab fa-php" title="PHP"></i>
+                  <span>PHP</span>
+                </div>
+                <div class="skill-item" data-level="65">
+                  <i class="fas fa-database" title="SQL et PL/SQL"></i>
+                  <span>SQL / PLSQL</span>
+                </div>
+                <div class="skill-item" data-level="50">
+                  <i class="fas fa-code" title="C et C++"></i>
+                  <span>C / C++</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>Conduire un projet</h3>
+              <div class="skill-items">
+                <div class="skill-item" data-level="60">
+                  <i class="fas fa-tasks"></i>
+                  <i class="fas fa-sync-alt"></i>
+                  <span>Gestion de projet agile (SCRUM)</span>
+                </div>
+                <div class="skill-item" data-level="50">
+                  <i class="fas fa-chart-line"></i>
+                  <span>Gestion du cycle de vie logiciel</span>
+                </div>
+                <div class="skill-item" data-level="85">
+                  <i class="fas fa-users"></i>
+                  <span>Relationnel, communication</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>Exploiter et analyser des données</h3>
+              <div class="skill-items">
+                <div class="skill-item" data-level="60">
+                  <i class="fab fa-python" title="Python"></i>
+                  <span>Python</span>
+                </div>
+                <div class="skill-item" data-level="65">
+                  <i class="fas fa-database" title="SQL et PL/SQL"></i>
+                  <span>SQL / PLSQL</span>
+                </div>
+                <div class="skill-item" data-level="50">
+                  <i class="fas fa-table" title="Excel et Power BI"></i>
+                  <span>Excel / Power BI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container">
+          <h2>Expériences</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h3>CGI - Développeur full-stack en alternance</h3>
+                <p class="date">2024-2025</p>
+                <p>Développement d'un progiciel de gestion financière à destination des collectivités territoriales françaises. </br>
+                  Intégration au sein d'une équipe agile, développement, correction d'anomalies et interventions
+                  dans les environnements client.</p>
+                  <a href="https://www.cgi.com/france/fr-fr/secteur-public/grand-angle" target="_blank" class="project-link">
+                    Voir le projet <i class="fas fa-external-link-alt"></i>
+                  </a>
+                <div class="tech-stack">
+                  <i class="fab fa-java" title="Java"></i>
+                  <i class="fas fa-database" title="SQL et PL/SQL (Base Oracle)"></i>
+                  <i class="fab fa-html5" title="HTML (JSP)"></i>
+                  <i class="fab fa-css3-alt" title="CSS"></i>
+                  <i class="fab fa-js" title="Javascript"></i>
+                  <i class="fab fa-gitlab" title="GitLab"></i>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h3>Projet universitaire - Chef de projet et développeur</h3>
+                <p class="date">2024-2025</p>
+                <p>Réalisation d'un Media Asset Manager pour le BTS Audiovisuel de Biarritz.
+                  L'application permet aux utilisateurs d'interagir avec des vidéos situées sur différents serveurs NAS,
+                  ils peuvent notamment visionner, modifier, exporter les vidéos, et bien d'autres choses encore...</p>
+                  <a href="https://github.com/Nicolas-Conguisti/BTSAudiovisuel" target="_blank" class="project-link">
+                    Voir le projet <i class="fas fa-external-link-alt"></i>
+                  </a>
+                <div class="tech-stack">
+                  <i class="fab fa-php" title="PHP"></i>
+                  <i class="fab fa-js" title="Javascript"></i>
+                  <i class="fab fa-docker" title="Docker"></i>
+                  <i class="fab fa-github" title="GitHub"></i>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h3>Organisateur : Cérémonie de remise des diplômes 2025</h3>
+                <p class="date">En cours</p>
+                <p>En tant que bénévole, je fais partie du comité d'organisation de la cérémonie de remise des diplômes 2025.
+                  Nous sommes actuellement en train de démarcher différentes parties prenantes externes
+                  (recherche de sponsors, demande de devis, ...) en collaboration avec la direction de l'IUT.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h3>Organisateur : Journée de concertation sur l'alternance</h3>
+                <p class="date">2024</p>
+                <p>En tant que bénévole, j'ai participé à l'organisation de la journée de concertation sur l'alternance.
+                  Une après-midi réunissant professeurs, alternants et professionnels du secteur local
+                  pour parler et débattre de l'avenir de l'alternance en France.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h3>Projet personnel : Stock-it !</h3>
+                <p class="date">En cours</p>
+                <p>En autonomie jusque dans l'apprentissage de Spring,
+                  je développe un registre d'inventaire permettant le stockage d'objets divers dans des lieux de stock. </br>
+                  En bref, une appli pour ranger des trucs dans des boîtes ...</p>
+                  <a href="https://github.com/Nicolas-Conguisti/Stock-It" target="_blank" class="project-link">
+                    Voir le projet <i class="fas fa-external-link-alt"></i>
+                  </a>
+                <div class="tech-stack">
+                  <i class="fab fa-java" title="Java Spring"></i>
+                  <i class="fas fa-database" title="MySQL"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Contact</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/Nicolas-Conguisti" target="_blank">Github</a>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>06 42 26 35 54</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>nicolas.conguisti1@gmail.com</span>
+              </div>
+              <div class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/nicolas-conguisti-7494a7273/" target="_blank">LinkedIn</a>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-file-pdf"></i>
+                <a href="./assets/CV/Nicolas-Conguisti_CV_FR.pdf" target="_blank" download>CV</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+
+    <script src="main.js"></script>
+  </body>
 </html>
