@@ -45,35 +45,10 @@ function initializeSmoothScroll() {
   });
 }
 
-// Animation de la navbar au scroll
-function initializeNavbarAnimation() {
-  const navbar = document.querySelector('.navbar');
-  let lastScroll = 0;
-
-  window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-
-    if (currentScroll <= 0) {
-      navbar.style.transform = 'translateY(0)';
-      return;
-    }
-
-    if (currentScroll > lastScroll) {
-      // Scroll vers le bas
-      navbar.style.transform = 'translateY(-100%)';
-    } else {
-      // Scroll vers le haut
-      navbar.style.transform = 'translateY(0)';
-    }
-
-    lastScroll = currentScroll;
-  });
-}
 
 // Initialisation
 document.addEventListener('DOMContentLoaded', () => {
   initializeSkills();
   initializeScrollAnimation();
   initializeSmoothScroll();
-  initializeNavbarAnimation();
 });
